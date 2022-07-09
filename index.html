@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApiPogo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="assets/icomoon/style.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+   <!--template  estructura card pokemon-->
+    <template id="template__pokemon">
+        <article class="pokemon">
+            <figure class="pokemon__figure">
+                <img src="" alt="" class="pokemon__imagen">
+            </figure>
+            <div class="pokemon__datos">
+                <h2 class="pokemon__numero"></h2>
+                <p class="pokemon__nombre"></p>
+                <ul class="pokemon__tipos">
+                </ul>
+            </div>
+            
+        </article>
+    </template>
+    <!-- Template skeleton loader css -->
+    <template id="template__skeleton">
+        <article class="skeleton">
+            <figure class="skeleton__figure">
+            
+            </figure>
+            <div class="skeleton__datos">
+                <div class="skeleton__numero"></div>
+                <p class="skeleton__estadisticas">
+                </p>
+                <ul class="skeleton__tipos">
+                </ul>
+            </div>
+            
+        </article>
+    </template>
+    <!-- template esctructura que se carga en el poup -->
+    <template class="" id="template__modalpoke">
+        <article class="pokemon pokemon--modal otros-navegadores">
+            <figure class="pokemon__figure">
+                <img src="" alt="" class="pokemon__imagen">
+            </figure>
+            <div class="pokemon__datos">
+                <h2 class="pokemon__nombre  pokemon__nombre--modal "></h2>
+                
+               <div class="pokemon__container">
+                    <div class="container__varios">
+                        <p class="title title--adorno">Moves</p>
+                        <ul class="pokemon__movimientos">
+                        <!--template__movimientos-->
+                        </ul>
+                    </div>
+                    <div class="container__varios">
+                        <div class="sticky">
+                            <p class="title title--adorno">stats</p>
+                        <ul class="pokemon__estadisticas">
+                            <!--template__estadisticas-->
+                        </ul>
+                        <div class="container__medidas container__medidas--centrado">
+                            <div class="divisor">
+                                <p class="title">weight</p>
+                                <p class="pokemon__peso dato"></p>
+                            </div>
+                            <div>
+                                <p class="title">height</p>
+                                <p class="pokemon__altura dato"></p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+               </div>
+                
+            </div>
+            
+        </article>
+    </template>
+    <template id="template__estadisticas">
+        <li class="pokemon__stat">
+            <span class="pokemon__nombre-stat"></span>
+            <span class="pokemon__dato-stat"></span>
+        </li>
+    </template>
+    <template id="template__movimientos">
+        <li class="pokemon__movimiento"></li>
+    </template>
+    <header class="header">
+        <h1 class="pokes__title skeletitle">PokeApi</h1>
+        <form action="" role="search" class="search">
+            <div class="search__container">
+                <input type="text" name="search" id="search" class="search__value" placeholder="Nombre o número">
+                <button class="search__button icon-search1" id="btnSearch" >
+                    
+                </button>
+            </div>
+            
+
+        </form>
+    </header>
+    
+
+    <!--contenedor grid de las card pokemons -->
+    <section id="container__pokemons" class="container__pokemons">
+        <!--template card pokemons -->
+    </section>
+    <!-- botones anterior-siguiente -->
+    <section class="navigation">
+        <a href="" class="navigation__boton" id="boton__anterior">Anterior</a>
+        <a href="" class="navigation__boton" id="boton__siguiente">Siguiente</a>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
